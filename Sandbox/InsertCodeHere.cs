@@ -8,7 +8,7 @@ namespace Sandbox
         public void MyCode()
         {
             // The FIRST line of code should be BELOW this line
-            // ny kommentar
+            // ny kommentar  ændret lokalt
 
             //Erklæret type   Aktuel type
             //Employee e1 = new Employee(1, "Poul", "Gade 123", "1212121");
