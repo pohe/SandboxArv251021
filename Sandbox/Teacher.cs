@@ -18,7 +18,7 @@ namespace Sandbox
 
         public Teacher(int id, string name, string address, string tlf, string subject):base(id, name, address, tlf)
         {
-            _subject = subject;
+            this._subject = subject;
         }
 
         public override int CalculateSalary()
@@ -34,6 +34,10 @@ namespace Sandbox
             return _subject == "SWD"? (int)(base.CalculateSalary() * 1.10) : base.CalculateSalary();
         }
 
+        public override int CalculatePension()
+        {
+            return 100000;
+        }
         public override string ToString()
         {
             return base.ToString()  + $" Subject {_subject}";

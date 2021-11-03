@@ -27,9 +27,24 @@ namespace Sandbox
             return salary;
         }
 
+        public override void MethodToBeChangedInSubClass()
+        {
+            Console.WriteLine("Is in Secretary Class");
+        }
+
         public override string ToString()
         {
             return base.ToString() + $" TypingSpeed {_typingSpeed}";
+        }
+
+        public override int CalculatePension()
+        {
+            return 200000;
+        }
+
+        public void NewMethodNotOverriden()
+        {
+            Console.WriteLine("Do nothing");
         }
     }
 }

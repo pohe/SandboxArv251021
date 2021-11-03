@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sandbox
 {
-    public class Employee
+    public abstract class Employee
     {
 
         private const int _baseSalary = 25000; 
@@ -71,6 +71,14 @@ namespace Sandbox
         {
             return _baseSalary; 
         }
+
+        public abstract int CalculatePension();
+
+        public virtual void MethodToBeChangedInSubClass()
+        {
+            Console.WriteLine("Is in Employee Class");
+        }
+
 
     }
 }
